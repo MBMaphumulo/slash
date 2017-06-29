@@ -1,0 +1,93 @@
+        .navbar{opacity: 0.8;border-bottom: 3px solid aqua;}
+        .wrapper{padding:10px;margin: auto 55px;background-color: rgba(84, 79, 78,0.5);box-shadow: 10px 15px 25px rgba(0, 0, 0,0.5);border-radius: 10px;margin-top:-6px;}
+        .close{text-align: left;color: red;margin-top: -3px;}
+        .carousel-inner{height: 400px;}
+        .carousel-caption{height: 380px;}
+        .cards{margin-top:5px;}
+        .card{box-shadow: 10px 10px 15px 25px rgba(0, 0, 0,0.2);}
+        .msg>button{width:300px;border-radius: 10px;border-top-left-radius: 0;border-top-right-radius: 0;}
+        .motive{margin-top:-35px;}
+        .dropdown-menu{background-color: rgba(120, 235, 230 ,0.7);}
+
+        /*model sets*/
+        #frameLogIn{display:none;width:500px;height: 325px;margin: 110px 0 0 450px;background-color:white;z-index:999999;border-radius:10px;position: fixed;}
+        #frameReg{display:none;width:500px;height: 575px;margin: -27px 0 0 450px;background-color:white;z-index:99999;border-radius:10px;position: fixed;}
+        #frameImg{display:none;padding:25px;width:700px;height: 575px;margin: -27px 0 0 450px;background-color:white;z-index:99999;border-radius:10px;position: fixed;}
+        #overlay{display:none;background-color: black;z-index: 9999;position: fixed;top:0;padding:0;margin:0;height: 100%;width: 100%;opacity:0.5;}
+        #frameLogIn button{border:none;background-color: transparent;margin-left: 465px;font-size: 20pt;}
+        #frameReg button{border:none;background-color: transparent;margin-left: 465px;font-size: 20pt;}
+        #contents{padding: 0 50px 0 50px;color:black;}
+        .form-group input{margin-top:10px;width:400px;font-family: serif}
+        .form-group{font-family: serif}
+        hr{border-bottom:2px solid rgba(0,0,0,0.5);}
+        /*model end*/
+
+        /*home page start*/
+        .homeContent{
+            border-left: 3px solid rgba(44, 127, 175,0.2);
+            border-right: 3px solid rgba(44, 127, 175,0.2);
+            padding: 0 20px 20px 20px;
+            border-radius: 10px;
+        }
+		.homeContentCenter{
+            border-right: 3px solid rgba(44, 127, 175,0.2);
+            padding: 0 20px 20px 20px;
+            border-radius: 10px;
+		}
+		
+        .comment{
+            margin-top: 10px;
+        }
+
+
+        #myPost{display:none;width:500px;height: 325px;margin: 90px 0 0 450px;background-color:white;border-radius:10px;position: fixed;z-index:999999;}
+        #btnCancel,#btnPost{width: 120px}
+
+        /*Avatar Design*/
+        .imagee img{border:4px solid skyblue;border-radius: 50%;}
+        img{border:2px solid white;border-radius: 10px;}
+
+        /*Avatar Ends*/
+
+        .UserDetails{
+            margin-left:-50px;
+            max-width: 500px;
+        }
+
+        .rate .btn{
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+        .btnComment{
+            margin-left: -40px;
+            height: 54px;
+        }
+        .commentt{
+            margin-left: -10px;
+        }
+        textarea {
+          resize: none;
+         }
+         /*
+Template Name: NewsFeed
+Template URI: http://www.wpfreeware.com/newsfeed-ultra-responsive-news-magazine-theme/
+Author: WpFreeware
+Author URI: http://www.wpfreeware.com
+Description: A Pro bootstrap html5 css3 responsive news magazine website template
+Version: 1.0 
+License: GPL
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+.viewPost input[type="submit"]{
+    color:blue;
+    cursor: pointer;
+    border:0 solid white;
+}
+
+#frameImg img: hover{
+    opacity: 1;
+}
