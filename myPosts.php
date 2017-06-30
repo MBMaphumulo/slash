@@ -10,11 +10,9 @@ if(!isset($_SESSION['user_id'])){
 </div>
    
     ';
-
     exit();
 }
 ?>
-
 <div class="container">
  	<div class="row">
 	 	<div class="col-md-2">
@@ -35,13 +33,12 @@ if(!isset($_SESSION['user_id'])){
 			
 				$pH = "";
 				$pB = "";
-				$req = 1;
-				$sql = "SELECT * FROM posts P,users S  WHERE post_request = '$req' AND P.added_by = S.user_id ORDER BY post_id DESC ";
+				$sql = "SELECT * FROM posts P,users S  WHERE P.added_by = S.user_id AND S.user_id = '".$_SESSION['user_id']."' ORDER BY post_id DESC ";
 				
 				
 				$results = $conn->query($sql);
 				
-				if($results){
+				if(mysqli_num_rows($results) > 0){
 						
 						while($row = $results->fetch_assoc()){
 							$pH = $row['post_header'];
@@ -49,7 +46,8 @@ if(!isset($_SESSION['user_id'])){
 							$pp = $row['post_pic'];
 							$userPost = $row['first_name'];
 							$time = $row['timme'];
-						    $statuss = $row['statuss'];
+							$statuss = $row['statuss'];
+						
 						
 						
 							if($pp != ""){
@@ -76,7 +74,7 @@ if(!isset($_SESSION['user_id'])){
 							}else{
 							echo ' 
 							 <form action="postView.php" method="POST">
-							 <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>'.$userPost.'</a> <span><i class="fa fa-calendar"></i>'.$time.'</span> <a href="#" style="color:green;font-weight:bold;"><i class="fa fa-tags"></i>'.$statuss.'</a></div>
+							 <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>'.$userPost.'</a> <span><i class="fa fa-calendar"></i>'.$time.'</span> <a href="#" style="color:green;font-weight:bold;"><i class="fa fa-tags"></i>'.$statuss.'</a> </div>
 							 <div class="row">
 								<div class="row">
 									<div class="col-md-offset-1 col-md-11 col-sm-11 col-xs-11">

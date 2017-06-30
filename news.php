@@ -48,17 +48,17 @@ if(!isset($_SESSION['user_id'])){
 							$pB = $row['post_body'];
 							$pp = $row['post_pic'];
 							$userPost = $row['first_name'];
-						
+							$timme =  $row['timme'];
 						
 							if($pp != ""){
 									echo '
 							
-							 <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>'.$userPost.'</a> <span><i class="fa fa-calendar"></i>6:49 AM</span> <a href="#"><i class="fa fa-tags"></i>DDN</a> </div>
+							 <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>'.$userPost.'</a> <span><i class="fa fa-calendar"></i>'.$timme.'</span> <a href="#"><i class="fa fa-tags"></i>DDN</a> </div>
 							 
 								 <div class="single_page_content"> <img class="img-center" src="'.$pp.'" alt=""> 
 								 <h1>'.$pH.'</h1>
-								 <p>'.$pB.'<p/>
-								 <blockquote>The Paradise of the rich is Made out of the hell of the Poor</blockquote>
+								 
+								 <blockquote><p>'.$pB.'<p/></blockquote>
 								
 								<div class="row">
 									<div class="col-md-1 rate">
@@ -78,11 +78,11 @@ if(!isset($_SESSION['user_id'])){
 							}else{
 							echo '
 							
-							 <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>'.$userPost.'</a> <span><i class="fa fa-calendar"></i>6:49 AM</span> <a href="#"><i class="fa fa-tags"></i>DDN</a> </div>
+							 <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>'.$userPost.'</a> <span><i class="fa fa-calendar"></i>'.$timme.'</span> <a href="#"><i class="fa fa-tags"></i>DDN</a> </div>
 							
 							 <h1>'.$pH.'</h1>
-							 <p>'.$pB.'<p/>
-							 <blockquote>The Paradise of the rich is Made out of the hell of the Poor</blockquote>
+							
+							 <blockquote> <p>'.$pB.'<p/></blockquote>
 								
 								<div class="row">
 									<div class="col-md-1 rate">

@@ -63,8 +63,11 @@
                     <li><a href="events.php">Events</a></li>
                     <li><a href="jobs.php">Jobs</a></li>
                     <li><a href="news.php">News</a></li>
+                    
                   </ul>
-                </li>';
+
+                </li>
+                <li><a href="myPosts.php">My Posts</a></li>';
             }
           ?>
 

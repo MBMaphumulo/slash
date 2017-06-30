@@ -6,7 +6,7 @@ if(isset($_SESSION["user_id"])){
       <div class="container">
 <center><div style="font-weight:bold;font-size:50px;color:red;">404</div>
 <hr style="border-bottom: 1px solid grey;"/>
-<p><h2 style="color:black;">Already loged in...<br/><br/> <a href="http://localhost/DDN/home.php">Click here</a></h2></p>
+<p><h2 style="color:black;">Already loged in...<br/><br/> <a href="http://localhost/GitHub/DDN/home.php">Click here</a></h2></p>
 </center>
 </div>
 

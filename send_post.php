@@ -24,15 +24,12 @@ if(isset($_FILES['profile'])){
     }
 }
 
-$pR = "sdfgh";
-
-
-
 if(($pH != "")){
     $date_added = date("Y-m-d");
     $added_by = $_SESSION["user_id"];
+    $statuss = "Processing...";
 
-    $sqlCommand = "INSERT INTO posts  VALUES('','$pH','$pB','$pR','$date_added','$added_by','$dir','$time')";
+    $sqlCommand = "INSERT INTO posts  VALUES('','$pH','$pB','$pR','$date_added','$added_by','$dir','$time','$statuss')";
     $query = $conn->query($sqlCommand);
     header("location: /DDN/home.php");
 }

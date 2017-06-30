@@ -2,7 +2,7 @@
 <?php
 include("inc/overall/mainHeader.php");
 
-if(!isset($_SESSION['user_id'])){
+if(isset($_SESSION['user_id']) && !isset($_POST["postHeader"])){
              echo '
             <div class="container">
 <center><div style="font-weight:bold;font-size:50px;color:red;">404</div>

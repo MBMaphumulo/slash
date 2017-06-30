@@ -35,6 +35,13 @@ $(document).ready(function(){
 			$('#myPost').fadeIn();
 		});
 
+		$('#btnCancel').click(function(){
+			$('#overlay').fadeOut();
+			$('#myPost').fadeOut();
+			$('#btnCallPost').fadeIn();
+
+		});
+
 		$('#btnCloss').click(function(){
 			$('#overlay').fadeOut();
 			$('#myPost').fadeOut();

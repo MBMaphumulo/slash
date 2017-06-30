@@ -69,7 +69,7 @@
                     <br/>   
                     <input style="border:0;margin-left:50px;" type="file" name="profile"/>
                     <hr/>     
-                    <input id="btnCancel" type="submit" class="btn btn-danger" name="  login" value="Cancel" />
+                    <input id="btnCancel" type="reset" class="btn btn-danger" name="  login" value="Cancel" />
                     <input id="btnPost" type="submit" class="btn btn-primary" name="btnPost" value="POST"/>
                   </div>
               </center>
