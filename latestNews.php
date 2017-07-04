@@ -8,7 +8,7 @@
 				$sql = "SELECT * FROM posts ORDER BY post_id DESC LIMIT 2";
 				$results = $conn->query($sql);
 				
-				if($conn->query($sql)){
+				if(mysqli_num_rows($results) > 0){
 						
 						while($row = $results->fetch_assoc()){
 							$pH = $row['post_header'];
@@ -26,7 +26,14 @@
 								;
 							  }
 						}
-					}
+						}
+						else{
+						echo '
+								<div class="single_page_content"> 
+									<h1>0 posts</h1>
+							   </div>
+						';
+				}
 								?>
               
             </ul>

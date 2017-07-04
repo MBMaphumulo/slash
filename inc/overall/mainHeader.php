@@ -1,4 +1,4 @@
-<?php include("inc/db_querys/login.php");
+<?php include("inc/db_querys/connection.php");
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-<?php include("inc/models.php")?>
+<?php include("inc/models.php");?>
 <nav class="navbar navbar-inverse navbar-fixed-top">
 <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -44,11 +44,11 @@
         <?php 
             if(isset($_SESSION["user_id"])){
                  echo ' 
-                        <li class="active"><a href="home.php">Home</a></li>
+                        <li class=""><a href="home.php">Home</a></li>
                      ';
             }else{
                 echo ' 
-                        <li class="active"><a href="index.php">Home</a></li>
+                        <li class=""><a href="index.php">Home</a></li>
                      ';
             }
         ?>
@@ -81,8 +81,8 @@
 				      ';
              }else{
                 echo ' <li id=""><a href="#">Wednesday 21 2017</a></li>
-                <li id="regLink"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li id="loginLink"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li id=""><a href="registerr.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li id=""><a href="LoggingIn.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 				
                 ';
              }

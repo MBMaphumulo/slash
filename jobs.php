@@ -1,5 +1,5 @@
 <?php
-session_start();
+include("inc/overall/mainHeader.php");
 if(!isset($_SESSION['user_id'])){
              echo '
             <div class="container">
@@ -13,7 +13,7 @@ if(!isset($_SESSION['user_id'])){
     exit();
 }
 
- include("inc/overall/mainHeader.php");?>
+ ?>
 <center>
     <h1>Jobs</h1>
 	<section id="contentSection">

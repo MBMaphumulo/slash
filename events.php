@@ -1,5 +1,5 @@
 <?php 
-session_start();
+include("inc/overall/mainHeader.php");
 if(!isset($_SESSION['user_id'])){
              echo '
             <div class="container">
@@ -12,9 +12,6 @@ if(!isset($_SESSION['user_id'])){
     ';
     exit();
 }
-
-
-include("inc/overall/mainHeader.php");
 
 if($_SESSION["user_id"]){
   echo "<script>window.location.href = http://localhost/DDN/Error.php</script>";

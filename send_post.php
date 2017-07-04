@@ -1,10 +1,11 @@
 <?php 
 
 include ("inc/db_querys/connection.php");
+
 $pH = $_POST["post_header"];
 $pB = $_POST["post_body"];
-$pname = $_FILES['$profile']["tmp_name"];
-$pR ="0";
+$pname = $_FILES['profile']["tmp_name"];
+$pR =0;
 $dir ="";
 $time = date("h:i:sa");
 
@@ -16,8 +17,6 @@ if(isset($_FILES['profile'])){
 			
 			$dir = 'userdata/profile_pics/'.$g_rand_dir.'/'.$_FILES["profile"]["name"];
              move_uploaded_file($_FILES['profile']["tmp_name"], $dir);
-             
-  
     }
     else{
         
@@ -28,10 +27,16 @@ if(($pH != "")){
     $date_added = date("Y-m-d");
     $added_by = $_SESSION["user_id"];
     $statuss = "Processing...";
+    $approved_byy = "Searching...";
 
-    $sqlCommand = "INSERT INTO posts  VALUES('','$pH','$pB','$pR','$date_added','$added_by','$dir','$time','$statuss')";
-    $query = $conn->query($sqlCommand);
-    header("location: /DDN/home.php");
+    $sqlCommand = "INSERT INTO posts  VALUES('','$pH','$pB',$pR,'$date_added','$added_by','$dir','$time','$statuss','$approved_byy')";
+
+    if($conn->query($sqlCommand)){
+
+        header("location: /DDN/myPosts.php");
+    }
+
+    
 }
 else{
     echo "You must enter something in the post field before you can send it ...";
