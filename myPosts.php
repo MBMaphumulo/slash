@@ -55,7 +55,7 @@ if(!isset($_SESSION['user_id'])){
 							if($pp != ""){
 									echo '
 							 <form action="postView.php" method="POST">
-							 <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>'.$userPost.'</a> <span><i class="fa fa-calendar"></i>'.$time.'</span> <a href="#" style="color:green;font-weight:bold;"><i class="fa fa-tags"></i>'.$statuss.' by '.$approved_byy.'</a> </div>
+							 <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>'.$userPost.'</a> <span><i class="fa fa-calendar"></i>'.$time.'</span><a href="#" style="color:green;font-weight:bold;"><i class="fa fa-tags"></i>'.$statuss.' '.$approved_byy.'</a> </div>
 							 <div class="row">
 								<div class="row">
 									<div class="col-md-offset-1 col-md-11 col-sm-11 col-xs-11">
@@ -76,7 +76,7 @@ if(!isset($_SESSION['user_id'])){
 							}else{
 							echo ' 
 							 <form action="postView.php" method="POST">
-							 <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>'.$userPost.'</a> <span><i class="fa fa-calendar"></i>'.$time.'</span>  <a href="#" style="color:green;font-weight:bold;"><i class="fa fa-tags"></i>'.$statuss.' by '.$approved_byy.'</a></div>
+							 <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>'.$userPost.'</a> <span><i class="fa fa-calendar"></i>'.$time.'</span> <a href="#" style="color:green;font-weight:bold;"><i class="fa fa-tags"></i>'.$statuss.' '.$approved_byy.'</a></div>
 							 <div class="row">
 								<div class="row">
 									<div class="col-md-offset-1 col-md-11 col-sm-11 col-xs-11">

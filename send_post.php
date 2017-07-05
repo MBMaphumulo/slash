@@ -26,8 +26,8 @@ if(isset($_FILES['profile'])){
 if(($pH != "")){
     $date_added = date("Y-m-d");
     $added_by = $_SESSION["user_id"];
-    $statuss = "Processing...";
-    $approved_byy = "Searching...";
+    $statuss = "Processing your request";
+    $approved_byy = "";
 
     $sqlCommand = "INSERT INTO posts  VALUES('','$pH','$pB',$pR,'$date_added','$added_by','$dir','$time','$statuss','$approved_byy')";
 

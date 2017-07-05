@@ -49,11 +49,13 @@ if(!isset($_SESSION['user_id'])){
 							$pp = $row['post_pic'];
 							$userPost = $row['first_name'];
 							$timme =  $row['timme'];
+							$statuss = $row["statuss"];
+							$approved_byy = $row["approved_byy"];
 						
 							if($pp != ""){
 									echo '
 							
-							 <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>'.$userPost.'</a> <span><i class="fa fa-calendar"></i>'.$timme.'</span> <a href="#"><i class="fa fa-tags"></i>DDN</a> </div>
+							 <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>'.$userPost.'</a> <span><i class="fa fa-calendar"></i>'.$timme.'</span><a href="#" style="color:green;font-weight:bold;"><i class="fa fa-tags"></i>'.$statuss.' '.$approved_byy.'</a> </div>
 							 
 								 <div class="single_page_content"> <img class="img-center" src="'.$pp.'" alt=""> 
 								 <h1>'.$pH.'</h1>
@@ -78,7 +80,7 @@ if(!isset($_SESSION['user_id'])){
 							}else{
 							echo '
 							
-							 <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>'.$userPost.'</a> <span><i class="fa fa-calendar"></i>'.$timme.'</span> <a href="#"><i class="fa fa-tags"></i>DDN</a> </div>
+							 <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>'.$userPost.'</a> <span><i class="fa fa-calendar"></i>'.$timme.'</span><a href="#" style="color:green;font-weight:bold;"><i class="fa fa-tags"></i>'.$statuss.' '.$approved_byy.'</a> </div>
 							
 							 <h1>'.$pH.'</h1>
 							
