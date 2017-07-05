@@ -68,7 +68,7 @@ if(!isset($_SESSION['user_id'])){
 										<p>'.$pB.'</p>
 									</div>
 									<div class="col-md-offset-1  col-md-3 col-sm-3 col-xs-3">
-										<img width="170" height="85" src="/DDN/'.$pp.'" alt="postImage" />
+										<img width="170" height="85" src="'.$pp.'" alt="postImage" />
 									</div>
 								</div>
 							 </div>	
