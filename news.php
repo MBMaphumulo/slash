@@ -41,7 +41,7 @@ if(!isset($_SESSION['user_id'])){
 				
 				$results = $conn->query($sql);
 				
-				echo "testing gitHub if it is connected with out slack";
+				
 				if(mysqli_num_rows($results) > 0){
 						
 						while($row = $results->fetch_assoc()){
