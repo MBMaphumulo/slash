@@ -37,7 +37,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 $_SESSION['firstname'] = $first_name;
                 $_SESSION['lastname'] = $last_name;
                 $_SESSION['active'] = $active;
-                echo "<script>window.location.href = 'http://localhost/DDN/home.php';</script>";
+                echo "<script>window.location.href = 'http://localhost/GitHub/DDN/home.php';</script>";
             }
             else{
                $error_msg = 'Sorry, but the password '.@$user_password.' doesnt match with the one you registered with. Please try again';

@@ -33,7 +33,7 @@ if(($pH != "")){
 
     if($conn->query($sqlCommand)){
 
-        header("location: /DDN/myPosts.php");
+        header("location: myPosts.php");
     }
 
     
