@@ -18,7 +18,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $c_pass = $_POST['c_passw'];
         $pass_md5 = md5($pass);
 
-        $sql = "INSERT INTO users VALUES('$user_id','$firstname','$lastname','1','$pass_md5','0$phoneNumber','$city','$surbub','$selectCouncillor')";
+        $sql = "INSERT INTO users VALUES('$user_id','$firstname','$lastname','1','$pass_md5','$phoneNumber','$city','$surbub','$selectCouncillor')";
 
 
 
