@@ -28,6 +28,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 $last_name = $row['last_name'];
                 $active = $row['active'];
                 $passCheck = $row['passwordd'];
+                $councillor = $row['councillor'];
 
             }
            
@@ -37,6 +38,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 $_SESSION['firstname'] = $first_name;
                 $_SESSION['lastname'] = $last_name;
                 $_SESSION['active'] = $active;
+                $_SESSION['councillor'] = $councillor;
                 echo "<script>window.location.href = 'http://localhost/GitHub/DDN/home.php';</script>";
             }
             else{

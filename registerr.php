@@ -1,5 +1,5 @@
 <?php include("inc/overall/mainHeader.php");
-$user_id = $firstname = $lastname = $email = $phoneNumber = $city = $surbub = "";
+$user_id = $firstname = $lastname = $email = $phoneNumber = $city = $surbub = $selectCouncillor = "";
 //Register_user
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
@@ -13,12 +13,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $phoneNumber = $_POST['phoneNumber'];
         $city = $_POST['city'];
         $surbub = $_POST['surbub'];
+        $selectCouncillor = $_POST['selectedCouncillor'];
         $pass = $_POST['passw'];
         $c_pass = $_POST['c_passw'];
-
         $pass_md5 = md5($pass);
 
-        $sql = "INSERT INTO users VALUES('$user_id','$firstname','$lastname','1','$pass_md5','0$phoneNumber','$city','$surbub')";
+        $sql = "INSERT INTO users VALUES('$user_id','$firstname','$lastname','1','$pass_md5','0$phoneNumber','$city','$surbub','$selectCouncillor')";
 
 
 
@@ -66,13 +66,20 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                     <input type="email" name="email" placeholder="Email address" required=""         value="<?php echo@$email;?>"/><br/>
                     <input type="text" name="phoneNumber" placeholder="Phone number" required=""     value="<?php echo@$phoneNumber;?>"/><br/>
                     <input type="text" name="city" placeholder="City" required=""                    value="<?php echo@$city;?>"/><br/>
-                    <input type="text" name="surbub" placeholder="Surbub" required=""                value="<?php echo@$surbub;?>"/><br/>
-                    <select name="council">
-                    <option value="v">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                    </select>
+                    <input type="text" name="surbub" placeholder="Surbub" required=""                value="<?php echo@$surbub;?>"/><br/><br/>
+                    <?php 
+
+                        $query = "SELECT username FROM userss";
+
+                        $res = $conn->query($query);
+                        echo "<select name = 'selectedCouncillor'>";
+                        echo "<option value = '--select councillor--'>--select councillor--</option>";
+                        while (($row = $res->fetch_assoc()))
+                        {
+                            echo "<option value = '".$row['username']."'>".$row['username']."</option>";
+                        }
+                        echo "</select>";
+                    ?><br/>
                     <input type="password" name="passw" placeholder="Password" required="" /><br/>
                     <input type="password" name="c_passw" placeholder="Confirm Password" required="" /><br/>
                     <input type="submit" class="btn btn-primary" name="btnSignUp" value="Sign Up" />
