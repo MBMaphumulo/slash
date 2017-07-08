@@ -41,13 +41,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
              
            $error_msg = "<div class='error' style='color:Red;font-weight:bolder;'> Sorry, but the password doesnt match</div>";
         }
-
             }
-     
     }
-
-
-
 }
 
 ?>
@@ -60,13 +55,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                 <h1>Registration</h1>
                   <?php echo @$error_msg ;?>
                 <div class="form-group text-center">
+
                     <input type="text" name="user_id" placeholder="Username" required="" value="<?php echo@$user_id;?>"/><br/>
                     <input type="text" name="firstname" placeholder="First name" required="" value="<?php echo@$firstname;?>"/><br/>
-                    <input type="text" name="lastname" placeholder="Last name" required=""           value="<?php echo@$lastname;?>"/><br/>
-                    <input type="email" name="email" placeholder="Email address" required=""         value="<?php echo@$email;?>"/><br/>
-                    <input type="text" name="phoneNumber" placeholder="Phone number" required=""     value="<?php echo@$phoneNumber;?>"/><br/>
-                    <input type="text" name="city" placeholder="City" required=""                    value="<?php echo@$city;?>"/><br/>
-                    <input type="text" name="surbub" placeholder="Surbub" required=""                value="<?php echo@$surbub;?>"/><br/><br/>
+                    <input type="text" name="lastname" placeholder="Last name" required=""  value="<?php echo@$lastname;?>"/><br/>
+                    <input type="email" name="email" placeholder="Email address" required="" value="<?php echo@$email;?>"/><br/>
+                    <input type="text" name="phoneNumber" placeholder="Phone number" required="" value="<?php echo@$phoneNumber;?>"/><br/>
+                    <input type="text" name="city" placeholder="City" required=""   value="<?php echo@$city;?>"/><br/>
+                    <input type="text" name="surbub" placeholder="Surbub" required=""    value="<?php echo@$surbub;?>"/><br/><br/>
                     <?php 
 
                         $query = "SELECT username FROM userss";
