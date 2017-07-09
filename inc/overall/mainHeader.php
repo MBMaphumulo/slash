@@ -53,10 +53,11 @@
             }
         ?>
         
-        <li><a href="about.php">About Us</a></li>
+     
           <?php 
             if(isset($_SESSION["user_id"])){
-                 echo '          
+                 echo '    
+                <li><a href="about.php">About Us</a></li>      
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Options <span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -75,6 +76,7 @@
         <?php
              if(isset($_SESSION["user_id"])){
                 echo '
+<<<<<<< HEAD
 				        <li id=""><a href="#"><p id="demo"></p>
 
                 <script>
@@ -82,6 +84,11 @@
                 document.getElementById("demo").innerHTML = d.toDateString();
                 </script> </a></li>
 				        <li id=""><a href="inc/db_querys/logOut.php"><span class="glyphicon glyphicon-user"></span> SignOut</a></li>
+=======
+        <li id=""><a href="#">Wednesday 21 2017</a></li>
+				<li id=""><a href="updateProfile.php">Account Settings</a></li>
+				<li id=""><a href="inc/db_querys/logOut.php"><span class="glyphicon glyphicon-user"></span> SignOut</a></li>
+>>>>>>> origin/master
 				      ';
              }else{
                 echo '
