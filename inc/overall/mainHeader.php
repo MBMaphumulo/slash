@@ -75,11 +75,23 @@
         <?php
              if(isset($_SESSION["user_id"])){
                 echo '
-				<li id=""><a href="#">Wednesday 21 2017</a></li>
-				<li id=""><a href="inc/db_querys/logOut.php"><span class="glyphicon glyphicon-user"></span> SignOut</a></li>
+				        <li id=""><a href="#"><p id="demo"></p>
+
+                <script>
+                var d = new Date();
+                document.getElementById("demo").innerHTML = d.toDateString();
+                </script> </a></li>
+				        <li id=""><a href="inc/db_querys/logOut.php"><span class="glyphicon glyphicon-user"></span> SignOut</a></li>
 				      ';
              }else{
-                echo ' <li id=""><a href="#">Wednesday 21 2017</a></li>
+                echo '
+
+                <li id=""><a href="#"><p id="demo"></p>
+
+                <script>
+                var d = new Date();
+                document.getElementById("demo").innerHTML = d.toDateString();
+                </script> </a></li>
                 <li id=""><a href="registerr.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                 <li id=""><a href="LoggingIn.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 				
