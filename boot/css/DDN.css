@@ -71,23 +71,20 @@
         textarea {
           resize: none;
          }
-         /*
-Template Name: NewsFeed
-Template URI: http://www.wpfreeware.com/newsfeed-ultra-responsive-news-magazine-theme/
-Author: WpFreeware
-Author URI: http://www.wpfreeware.com
-Description: A Pro bootstrap html5 css3 responsive news magazine website template
-Version: 1.0 
-License: GPL
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-*/
+    
 
-.viewPost input[type="submit"]{
-    color:blue;
-    cursor: pointer;
-    border:0 solid white;
-}
+        .viewPost input[type="submit"]{
+            color:blue;
+            cursor: pointer;
+            border:0 solid white;
+        }
 
-#frameImg img: hover{
-    opacity: 1;
-}
+        #frameImg img: hover{
+            opacity: 1;
+        }
+
+        select{
+            font-weight: bold;
+            width: 400px;
+            height: 25px;
+        }

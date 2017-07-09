@@ -1,8 +1,6 @@
 <?php include("inc/overall/mainHeader.php");
 ?>
 
-
-
 <?php
 //user_login
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -28,6 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 $last_name = $row['last_name'];
                 $active = $row['active'];
                 $passCheck = $row['passwordd'];
+                $councillor = $row['councillor'];
 
             }
            
@@ -37,6 +36,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 $_SESSION['firstname'] = $first_name;
                 $_SESSION['lastname'] = $last_name;
                 $_SESSION['active'] = $active;
+                $_SESSION['councillor'] = $councillor;
+                
                 echo "<script>window.location.href = 'http://localhost/GitHub/DDN/home.php';</script>";
             }
             else{
@@ -66,8 +67,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                <div class="form-group text-center">
                 
                   <input type="text" name="user_id" placeholder="Username" value="<?php echo @$user_login;?>" required=""/> <br/>
+
                   <input type="password" name="pass" placeholder="Password" value="" required=""/> <br/>
-                  <a href=""><input type="submit" class="btn btn-primary" name="btnLogin" value="Login" /></a>
+                  <a href="">
+                   <input type="submit" class="btn btn-primary" name="btnLogin" value="Login" />
+                  </a>
                </div>
               <hr/>
               <p>Don't have an account ?<a href="registerr.php"> <input style="margin-left:170px;" id="" type="button" class="btn btn-primary" name="submit" value="Sign Up" /></a></p> 

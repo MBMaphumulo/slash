@@ -5,7 +5,7 @@ include ("inc/db_querys/connection.php");
 $pH = $_POST["post_header"];
 $pB = $_POST["post_body"];
 $pname = $_FILES['profile']["tmp_name"];
-$pR =0;
+$pR = 0;
 $dir ="";
 $time = date("h:i:sa");
 

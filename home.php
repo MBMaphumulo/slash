@@ -5,12 +5,11 @@ if(!isset($_SESSION['user_id'])){
             <div class="container">
 <center><div style="font-weight:bold;font-size:50px;color:red;">404</div>
 <hr style="border-bottom: 1px solid grey;"/>
-<p><h2 style="color:black;">Sorry but were expriencing technical problems. Please try again </h2></p>
+<p><h2 style="color:black;">Sorry but were expriencing technical problems. Please try and <a href="http://localhost/GitHub/DDN/loggingIn.php" style="color:blue;">Login</a> </h2></p>
 </center>
 </div>
    
     ';
-
     exit();
 }
 ?>
@@ -23,9 +22,10 @@ if(!isset($_SESSION['user_id'])){
 	 			<img id="avatarr" width="200" height="200" src="assets/avatar.png" alt="image" style="margin-left: -50px;"/>
 	 		</div>
 	 		<div class="UserDetails">
-	 			<div><h3><?php echo @$_SESSION['firstname'];?> <?php echo @$_SESSION['lastname'];?></h3></div><button id="btnCallPost" class="btn btn-primary">POST</button>
+	 			<div><h3><?php echo @$_SESSION['firstname'];?> <?php echo @$_SESSION['lastname'];?></h3></div>
+	 			<h4>Your Councillor : <?php echo @$_SESSION['councillor'];?></h4>
+	 			<button id="btnCallPost" class="btn btn-primary">POST</button>
 	 		</div>
-	 		
 	 	</div>	
 	 	<div class="col-md-10 homeContent">
 	 		<div class="row">
@@ -130,10 +130,7 @@ if(!isset($_SESSION['user_id'])){
 	 						
 	 						<center><h2>Weather</h2>
 	 					<a href="https://www.accuweather.com/en/us/new-york-ny/10007/weather-forecast/349727" class="aw-widget-legal">
-<!--
-By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.
--->
-</a><div id="awcc1498515729612" class="aw-widget-current"  data-locationkey="" data-unit="f" data-language="en-us" data-useip="true" data-uid="awcc1498515729612"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script></center>
+						</a><div id="awcc1498515729612" class="aw-widget-current"  data-locationkey="" data-unit="f" data-language="en-us" data-useip="true" data-uid="awcc1498515729612"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script></center>
 
 	 					</div>
 	 				</div>
