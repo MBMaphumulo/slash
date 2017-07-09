@@ -67,12 +67,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                     <input type="text" name="phoneNumber" placeholder="Phone number" required=""     value="<?php echo@$phoneNumber;?>"/><br/>
                     <input type="text" name="city" placeholder="City" required=""                    value="<?php echo@$city;?>"/><br/>
                     <input type="text" name="surbub" placeholder="Surbub" required=""                value="<?php echo@$surbub;?>"/><br/>
-                    <select name="council">
-                    <option value="v">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                    </select>
+                  
                     <input type="password" name="passw" placeholder="Password" required="" /><br/>
                     <input type="password" name="c_passw" placeholder="Confirm Password" required="" /><br/>
                     <input type="submit" class="btn btn-primary" name="btnSignUp" value="Sign Up" />

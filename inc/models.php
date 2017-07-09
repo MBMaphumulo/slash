@@ -6,7 +6,7 @@
     </form> 
 </div>
 <div id="myPost">
-    <form action="send_post.php" method="POST" enctype="multipart/form-data">
+    <form action="send_users.php" method="POST" enctype="multipart/form-data">
         <div class="row">
             <div class="col-md-12 col-sm-12">
               <center>
