@@ -58,14 +58,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
                     <input type="text" name="user_id" placeholder="Username" required="" value="<?php echo@$user_id;?>"/><br/>
                     <input type="text" name="firstname" placeholder="First name" required="" value="<?php echo@$firstname;?>"/><br/>
-<<<<<<< HEAD
-                    <input type="text" name="lastname" placeholder="Last name" required=""           value="<?php echo@$lastname;?>"/><br/>
-                    <input type="email" name="email" placeholder="Email address" required=""         value="<?php echo@$email;?>"/><br/>
-                    <input type="text" name="phoneNumber" placeholder="Phone number" required=""     value="<?php echo@$phoneNumber;?>"/><br/>
-                    <input type="text" name="city" placeholder="City" required=""                    value="<?php echo@$city;?>"/><br/>
-                    <input type="text" name="surbub" placeholder="Surbub" required=""                value="<?php echo@$surbub;?>"/><br/>
-                  
-=======
+
                     <input type="text" name="lastname" placeholder="Last name" required=""  value="<?php echo@$lastname;?>"/><br/>
                     <input type="email" name="email" placeholder="Email address" required="" value="<?php echo@$email;?>"/><br/>
                     <input type="text" name="phoneNumber" placeholder="Phone number" required="" value="<?php echo@$phoneNumber;?>"/><br/>
@@ -84,7 +77,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                         }
                         echo "</select>";
                     ?><br/>
->>>>>>> origin/master
+
                     <input type="password" name="passw" placeholder="Password" required="" /><br/>
                     <input type="password" name="c_passw" placeholder="Confirm Password" required="" /><br/>
                     <input type="submit" class="btn btn-primary" name="btnSignUp" value="Sign Up" />
