@@ -132,7 +132,7 @@ if(isset($_FILES['pp'])){
                $_SESSION['userPP'] = $row['profile_picc'];
             }}
 
-             echo"<script>window/location.url='http://locahost/GitHub/DDN/updateProfile.php'</script>";
+             echo"<script>window/location.url='http://locahost/GitHub/DDN/updateProfile.php';</script>";
         }
     }
     else{

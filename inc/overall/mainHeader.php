@@ -77,7 +77,7 @@
              if(isset($_SESSION["user_id"])){
                 echo '
 
-				        <li><a href="#"><span id="demo"></span>
+				        <li><a href="https://www.timeanddate.com/worldclock/south-africa/durban"><span id="demo"></span>
                 <script>
                 var d = new Date();
                 document.getElementById("demo").innerHTML = d.toDateString();
@@ -91,7 +91,7 @@
              }else{
                 echo '
 
-                <li id=""><a href="#"><p id="demo"></p>
+                <li id=""><a href="https://www.timeanddate.com/worldclock/south-africa/durban"><p id="demo"></p>
                 <script>
                 var d = new Date();
                 document.getElementById("demo").innerHTML = d.toDateString();
