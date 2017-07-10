@@ -13,11 +13,6 @@ if(!isset($_SESSION['user_id'])){
     exit();
 }
 
-if($_SESSION["user_id"]){
-  echo "<script>window.location.href = http://localhost/DDN/Error.php</script>";
-}else{
-
-
 }
 ?>
 

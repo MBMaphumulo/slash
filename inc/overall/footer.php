@@ -10,10 +10,24 @@
           <div class="footer_widget wow fadeInDown">
             <h2>Tag</h2>
             <ul class="tag_nav">
-              
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">News</a></li>
+              <?php 
+                  if(isset($_SESSION["user_id"])){
+                 echo ' 
+                       <li><a href="jobs.php">Jobs</a></li>
+                       <li><a href="events.php">Events</a></li>
+                       <li><a href="news.php">News</a></li>
+                 '; 
+
+               }else{
+                   echo ' 
+                       <li><a href="#">Jobs</a></li>
+                       <li><a href="#">Events</a></li>
+                       <li><a href="#">News</a></li>
+                 '; 
+               }
+
+              ?>
+
            
             </ul>
           </div>

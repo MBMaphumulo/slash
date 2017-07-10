@@ -1,4 +1,19 @@
-<?php include("inc/overall/mainHeader.php");?>
+<?php 
+include("inc/overall/mainHeader.php");
+if(!isset($_SESSION['user_id'])){
+             echo '
+            <div class="container">
+<center><div style="font-weight:bold;font-size:50px;color:red;">404</div>
+<hr style="border-bottom: 1px solid grey;"/>
+<p><h2 style="color:black;">Sorry but were expriencing technical problems. Please try again </h2></p>
+</center>
+</div>
+   
+    ';
+    exit();
+}
+
+?>
 <center>
     <h1>About Dailry Distributed News</h1>
   

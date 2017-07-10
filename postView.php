@@ -52,7 +52,7 @@ if(isset($_SESSION['user_id']) && !isset($_POST["postHeader"])){
 	<div class="col-md-3 col-lg-3 col-xs-3 text-center" >
 			<h1 style="margin-left:-50px;">Post</h1>
 	 		<div class="imagee">
-	 			<img id="avatarr" width="200" height="200" src="assets/avatar.png" alt="image" style="margin-left: -50px;"/>
+	 			<img id="avatarr" width="200" height="200" src="<?php echo @$_SESSION['userPP']?>" alt="image" style="margin-left: -50px;"/>
 	 		</div>
 	 		<div class="UserDetails">
 	 			<div><h3><?php echo @$_SESSION['firstname'];?> <?php echo @$_SESSION['lastname'];?></h3></div><button id="btnCallPost" class="btn btn-primary">POST</button>
