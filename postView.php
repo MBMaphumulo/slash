@@ -55,7 +55,9 @@ if(isset($_SESSION['user_id']) && !isset($_POST["postHeader"])){
 	 			<img id="avatarr" width="200" height="200" src="<?php echo @$_SESSION['userPP']?>" alt="image" style="margin-left: -50px;"/>
 	 		</div>
 	 		<div class="UserDetails">
-	 			<div><h3><?php echo @$_SESSION['firstname'];?> <?php echo @$_SESSION['lastname'];?></h3></div><button id="btnCallPost" class="btn btn-primary">POST</button>
+	 			<div><h3><?php echo @$_SESSION['firstname'];?> <?php echo @$_SESSION['lastname'];?></h3></div>
+	 			<h4>Your Councillor : <?php echo @$_SESSION['councillor'];?></h4>
+	 			<button id="btnCallPost" class="btn btn-primary">POST</button>
 	 		</div>
 	 		
 	</div>
