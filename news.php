@@ -1,18 +1,24 @@
 
-<?php include("inc/overall/mainHeader.php");
+<?php 
+include("inc/overall/mainHeader.php");
 
 if(!isset($_SESSION['user_id'])){
              echo '
             <div class="container">
-<center><div style="font-weight:bold;font-size:50px;color:red;">404</div>
-<hr style="border-bottom: 1px solid grey;"/>
-<p><h2 style="color:black;">Sorry but were expriencing technical problems. Please try again </h2></p>
-</center>
-</div>
+			<center>
+				<div style="font-weight:bold;font-size:50px;color:red;">404</div>
+				<hr style="border-bottom: 1px solid grey;"/>
+				<p>
+				    <h2 style="color:White;">Sorry but were expriencing technical problems. Please try again </h2>
+				</p>
+			</center>
+			</div>
    
     ';
     exit();
-}?>
+}
+
+?>
 
 <center><h1>News</h1></center>
 
@@ -24,11 +30,6 @@ if(!isset($_SESSION['user_id'])){
   <section id="contentSection">
     <div class="row">
       <div class="col-lg-8 col-md-8 col-sm-8">
-            <ol class="breadcrumb">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">Community</a></li>
-              <li class="active">About Company</li>
-            </ol>
             <h1>Daily Distributed News("Push button Publish")</h1>
            		<?php 
 			
@@ -130,27 +131,8 @@ if(!isset($_SESSION['user_id'])){
 	</div>
       <div class="col-lg-4 col-md-4 col-sm-4">
         
-<?php include("latestNews.php")?>
-          <div class="single_sidebar">
-            <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active"><a href="#category" aria-controls="home" role="tab" data-toggle="tab">News</a></li>
-              <li role="presentation"><a href="#video" aria-controls="profile" role="tab" data-toggle="tab">Video</a></li>
-              <li role="presentation"><a href="#comments" aria-controls="messages" role="tab" data-toggle="tab">Comments</a></li>
-            </ul>
-            <div class="tab-content">
-             
-              <div role="tabpanel" class="tab-pane" id="video">
-                <div class="vide_area">
-                  
-                </div>
-              </div>
-            
-            </div>
-          </div>
-          
-          
-   
-      </div>
+<?php include("latestNews.php");?>
+
     </div>
   </section>
 </div>

@@ -22,7 +22,22 @@
     <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <style type="text/css">
+            html,body,#contentSection,#newsSection,.viewPost input{
+                background-image: url("boot/css/back.jpg"); 
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+
+        }
+        input,button,select,option{
+          color:black;
+          font-weight: bolder;
+          font-size: 15pt;
+        }
+
     </style>
+
 </head>
 <body>
 <?php include("inc/models.php");?>

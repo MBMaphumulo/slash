@@ -1,3 +1,7 @@
+
+        *{
+            color:white;
+        }
         .navbar{opacity: 0.8;border-bottom: 3px solid aqua;}
         .wrapper{padding:10px;margin: auto 55px;background-color: rgba(84, 79, 78,0.5);box-shadow: 10px 15px 25px rgba(0, 0, 0,0.5);border-radius: 10px;margin-top:-6px;}
         .close{text-align: left;color: red;margin-top: -3px;}
@@ -77,6 +81,12 @@
             color:blue;
             cursor: pointer;
             border:0 solid white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .viewPost{
+            background-color:transparent; 
         }
 
         #frameImg img: hover{
@@ -87,4 +97,5 @@
             font-weight: bold;
             width: 400px;
             height: 25px;
+            color:black;
         }

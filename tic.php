@@ -1,9 +1,9 @@
 
   <section id="newsSection">
     <div class="row">
-      <div class="col-lg-12 col-md-12">
-        <div class="latest_newsarea"> <span>Latest News</span>
-          <ul id="ticker01" class="news_sticker">	
+      <div class="col-lg-12 col-md-12" style="height: 50px;">
+        <div class="latest_newsarea " style="height: 50px;"> <span>Latest News</span>
+          <ul id="ticker01" class="news_sticker " style="height: 50px;">	
 		  <?php 
 			
 				$pH = "";
@@ -22,12 +22,12 @@
 						
 							if($pp != ""){
 									echo '<form action="postView.php" method="POST">
-									<li><a href="#"><img src="'.$pp.'" alt=""><input style="color:white;background-color:black;border:0px solid black;" type="submit" name="postHeader" value="'.$pH.'" /></a></li>
+									<li style="height: 50px;"><a href="#"><img src="'.$pp.'" alt=""><input style="color:white;background-color:black;border:0px solid black;" type="submit" name="postHeader" value="'.$pH.'" /></a></li>
 									</form>
 										';
 							}else{
 								echo '<form action="postView.php" method="POST">
-									<li><a href="#"><input style="color:white;background-color:black;border:0px solid black;" type="submit" name="postHeader" value="'.$pH.'" /></a></li>
+									<li style="height: 50px;"><a href="#"><input style="color:white;background-color:black;border:0px solid black;" type="submit" name="postHeader" value="'.$pH.'" /></a></li>
 									</form>
 										';
 							}

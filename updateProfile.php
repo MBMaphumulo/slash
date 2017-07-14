@@ -96,6 +96,11 @@ if(isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['city'])){
             $surbub = $row['surbub'];
             $pp = $row['profile_picc'];
         }
+
+            $_SESSION['firstname'] =  $fname;
+            $_SESSION['lastname'] =  $lname; 
+       
+           
             
     }
 }
@@ -130,14 +135,19 @@ if(isset($_FILES['pp'])){
                 while($row = $result->fetch_assoc()){
            
                $_SESSION['userPP'] = $row['profile_picc'];
-            }}
 
-             echo"<script>window/location.url='http://locahost/GitHub/DDN/updateProfile.php';</script>";
+                echo"<script>window/location.url='http://locahost/GitHub/DDN/updateProfile.php';</script>";
+            }
+        }
+
+            
         }
     }
     else{
         
     }
+
+
 }
 ?>
 <link href="inc/style.css" rel="stylesheet" />

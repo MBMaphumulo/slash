@@ -5,7 +5,7 @@ if(!isset($_SESSION['user_id'])){
             <div class="container">
 <center><div style="font-weight:bold;font-size:50px;color:red;">404</div>
 <hr style="border-bottom: 1px solid grey;"/>
-<p><h2 style="color:black;">Sorry but were expriencing technical problems. Please try and <a href="http://localhost/GitHub/DDN/loggingIn.php" style="color:blue;">Login</a> </h2></p>
+<p><h2 style="color:White;">Sorry but were expriencing technical problems. Please try and <a href="http://localhost/GitHub/DDN/loggingIn.php" style="color:blue;">Login</a> </h2></p>
 </center>
 </div>
    
@@ -58,19 +58,19 @@ if(!isset($_SESSION['user_id'])){
 							 <form action="postView.php" method="POST">
 							 <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>'.$userPost.'</a> <span><i class="fa fa-calendar"></i>'.$time.'</span> <a href="#" style="color:green;font-weight:bold;"><i class="fa fa-tags"></i>'.$statuss.' '.$approved_byy.'</a> </div>
 							 <div class="row">
-								<div class="row">
-									<div class="col-md-offset-1 col-md-11 col-sm-11 col-xs-11">
-										<center><h3><div class="viewPost"><input type="submit" name="postHeader" value="'.$pH.'" /></div></h3></center>
+								<div class="col-md-6">
+									<div class="col-md-12">
+										<h3><div class="viewPost"><input type="submit" name="postHeader" value="'.$pH.'" /></div></h3>
 									</div> 
-								</div>
-								<div class="row">
-									<div class="col-md-offset-1 col-md-5 col-sm-5 col-xs-5">
+									<div class="col-md-12">
 										<p>'.$pB.'</p>
 									</div>
-									<div class="col-md-offset-1  col-md-3 col-sm-3 col-xs-3">
-										<img width="170" height="85" src="'.$pp.'" alt="postImage" />
-									</div>
 								</div>
+								
+									<div class="col-md-offset-1 col-md-5">
+										<img width="170" height="85" style="margin-top:15px;" src="'.$pp.'" alt="postImage" />
+									</div>
+								
 							 </div>	
 							 </form>
 							';

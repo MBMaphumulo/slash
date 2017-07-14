@@ -14,6 +14,14 @@ if(!isset($_SESSION['user_id'])){
 }
 
 ?>
+<style>
+        input,button{
+          color:black;
+          font-weight: bolder;
+          font-size: 10pt;
+        }
+
+    </style>
 <center>
     <h1>About Dailry Distributed News</h1>
   
@@ -33,17 +41,17 @@ if(!isset($_SESSION['user_id'])){
               <input class="form-control" type="text" placeholder="Name*">
               <input class="form-control" type="email" placeholder="Email*">
               <textarea class="form-control" cols="30" rows="10" placeholder="Message*"></textarea>
-              <input type="submit" value="Send Message">
+              <input type="submit" class="btn btn-primary" value="Send Message">
             </form>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4">
         <aside class="right_content">
-<?php include("latestNews.php")?>
+<?php include("latestNews.php");?>
         </aside>
       </div>
     </div>
   </section>
-
+</div>
 <?php include("inc/overall/footer.php");?>
